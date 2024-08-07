@@ -36,3 +36,19 @@ $("input").keypress(function (event) {
 $(document).keypress(function (event) {
   $("h1").text(event.key);
 });
+
+// $("h1").on("mouseover", function () {
+//   $("h1").css("color", "green");
+// });
+
+// $("button").on("click", function () {
+//   // $("h1").hide();
+//   // $("h1").toogle();
+//   // $("h1").fadeOUt();
+//   // $("h1").fadeIn();
+//   $("h1").fadeToogle();
+// });
+
+$("button").on("click", function () {
+  $("h1").slideUp().slideDown().animate({ opacity: 0.5 });
+});
